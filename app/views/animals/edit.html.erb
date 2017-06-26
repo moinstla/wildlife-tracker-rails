@@ -1,0 +1,12 @@
+<h1>Edit this animal's information</h1>
+
+<% if @animal.errors.any? %>
+  <h3>OoooF! We ran in to some errors:</h3>
+  <ul>
+    <% @list.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render "form" %>
