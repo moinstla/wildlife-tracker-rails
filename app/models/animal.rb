@@ -5,4 +5,5 @@ class Animal < ActiveRecord::Base
   validates :markings, :presence => true
   validates :age, :presence => true
   validates :tag, :presence => true
+  has_many :sightings
 end
